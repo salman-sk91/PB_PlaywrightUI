@@ -29,7 +29,7 @@ Its a Modular Test Driven Framework, all the test scenarios use '@Test' annotati
 The Browser is initialized at the beggining of each Test file and destroyed at the completion of Test.
 
 Using the Page Object Model to keep all Page Object locators/Web Elements in a separate files for easy maintenance. The default execution happens on chromium browser in headless: false
-To switch between actual headless and non-headless run change the parameter "<parameter name="headlessMode" value="false"/>" in testNg.xml file.
+To switch between actual headless and non-headless run change the parameter \<parameter name="headlessMode" value="false"/> in testNg.xml file.
 
 The Test scenario can be executed using individual test file/ testNg.xml / pom.xml file 
 
