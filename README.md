@@ -6,12 +6,12 @@ A simple PB UI Automation using Java + Playwright that verifies functionality of
 Flow automated as part of the project are as follows -
 
 Use any of the mentioned frameworks to automate the following scenario on www.payback.at:
-o Go to “Anmelden”
-o Select “Noch keine PAYBACK Karte? Neue Karte auswählen.“
-o Select a PAYBACK card of your choice
-o Enter some Email and pin and click on “Weiter”
-o Enter some personal data (only the mandatory fields)
-▪ Please do some assertions on the field validation
+* Go to “Anmelden”
+* Select “Noch keine PAYBACK Karte? Neue Karte auswählen.“
+* Select a PAYBACK card of your choice
+* Enter some Email and pin and click on “Weiter”
+* Enter some personal data (only the mandatory fields)
+* Please do some assertions on the field validation
 
 ****************************************************************************
 Tools/Technologies used are as follows - 
@@ -26,7 +26,7 @@ Tools/Technologies used are as follows -
 How the Framework works?
 
 Its a Modular Test Driven Framework, all the test scenarios use '@Test' annotation of TestNG in their respective test files.
-The Browser is initialized at the beggining of each Test file and destroyed at the completion of Test.
+The Browser is initialized at the beginning of each Test file and destroyed at the completion of Test.
 
 Using the Page Object Model to keep all Page Object locators/Web Elements in a separate files for easy maintenance. The default execution happens on chromium browser in headless: false
 To switch between actual headless and non-headless run change the parameter \<parameter name="headlessMode" value="false"/> in testNg.xml file.
