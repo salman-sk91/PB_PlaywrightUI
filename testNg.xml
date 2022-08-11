@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PayBack UI Test Suite" verbose="2">
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="headlessMode" value="false"/>
+
+    <test name="Anmelden UI Test">
+        <classes>
+            <class name="UITest.PayBackTest"/>
+        </classes>
+    </test>
+
+</suite>
