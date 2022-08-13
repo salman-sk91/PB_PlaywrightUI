@@ -18,10 +18,12 @@ public class PayBackTest extends BaseLoader {
     }
 
     @Test(priority = 1)
-    public void AnmeldenFlow() throws InterruptedException {
+    public void AnmeldenFlow() {
 
         new HomePage(page).navigateToHomePage("https://www.payback.at/");
+        new HomePage(page).verifySuccessful_Navigation();
         new HomePage(page).clickOnAnmelden();
+        new AnmeldenPage(page).verifySuccessful_Navigation();
         new AnmeldenPage(page).doRegistrations();
         new AnmeldenPage(page).verifyFieldValidation();
 

@@ -23,7 +23,12 @@ public class BaseLoader {
             context = browser.newContext(contextOptions);
             page = context.newPage();
         } else if (browserType.equalsIgnoreCase("Firefox")) {
-            System.out.println("Executing in Firefox...");
+            var launchOptions = new BrowserType.LaunchOptions().setHeadless(headlessMode).setArgs(List.of("--start-maximized"));
+            var contextOptions = new Browser.NewContextOptions().setViewportSize(null);
+            playWriteManager = Playwright.create();
+            browser = playWriteManager.firefox().launch(launchOptions);
+            context = browser.newContext(contextOptions);
+            page = context.newPage();
         } else {
             var launchOptions = new BrowserType.LaunchOptions().setHeadless(false).setArgs(List.of("--start-maximized"));
             var contextOptions = new Browser.NewContextOptions().setViewportSize(null);
