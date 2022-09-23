@@ -22,10 +22,10 @@ public class PayBackTest extends BaseLoader {
 
         new HomePage(page).navigateToHomePage("https://www.payback.at/");
         new HomePage(page).verifySuccessful_Navigation();
-        new HomePage(page).clickOnAnmelden();
-        new AnmeldenPage(page).verifySuccessful_Navigation();
-        new AnmeldenPage(page).doRegistrations();
-        new AnmeldenPage(page).verifyFieldValidation();
+        //new HomePage(page).clickOnAnmelden();
+        //new AnmeldenPage(page).verifySuccessful_Navigation();
+       // new AnmeldenPage(page).doRegistrations();
+       // new AnmeldenPage(page).verifyFieldValidation();
 
     }
 
