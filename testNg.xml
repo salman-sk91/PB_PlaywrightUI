@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="PayBack UI Test Suite" verbose="2">
-    <parameter name="browserType" value="chrome"/>
+    <parameter name="browserType" value="firefox"/>
     <parameter name="headlessMode" value="true"/>
 
     <test name="Anmelden UI Test">
